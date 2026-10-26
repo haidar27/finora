@@ -104,14 +104,15 @@
     import { getFirestore, collection, doc, getDoc, getDocs, addDoc, setDoc, updateDoc, deleteDoc, onSnapshot, serverTimestamp } from 'https://www.gstatic.com/firebasejs/13.1.0/firebase-firestore.js';
 
     /* ================= FIREBASE CONFIG ================= */
-    const firebaseConfig = {
-      apiKey: 'GANTI_DENGAN_API_KEY',
-      authDomain: 'GANTI_DENGAN_PROJECT_ID.firebaseapp.com',
-      projectId: 'GANTI_DENGAN_PROJECT_ID',
-      storageBucket: 'GANTI_DENGAN_PROJECT_ID.firebasestorage.app',
-      messagingSenderId: 'GANTI_DENGAN_MESSAGING_SENDER_ID',
-      appId: 'GANTI_DENGAN_APP_ID'
-    };
+const firebaseConfig = {
+  apiKey: "AIzaSyCoQwf8vnWcBQvAFmSpTTW0o7QXAT8PMdY",
+  authDomain: "finora-817be.firebaseapp.com",
+  projectId: "finora-817be",
+  storageBucket: "finora-817be.firebasestorage.app",
+  messagingSenderId: "474447805066",
+  appId: "1:474447805066:web:b571a91363a8c89193cb73",
+  measurementId: "G-HF41RSP8V5"
+};
 
     const isFirebaseConfigured = !!firebaseConfig.apiKey && !firebaseConfig.apiKey.startsWith('GANTI_') && !!firebaseConfig.projectId && !firebaseConfig.projectId.startsWith('GANTI_');
     let app = null, auth = null, db = null, currentUser = null, profile = null, creatorAuth = null;
